@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'Bug/styles.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="{% static 'Bug/layout.js' %}"></script>
+    <title>Bug Move</title>
+</head>
+<body>
+    <div style="display: flex;justify-content:center;align-items:center;height:100px; width: 99vw;background-color: rgb(140, 177, 140);">
+        <a href="{% url 'Species' %}" class="head">Species</a>
+
+        <a href="{ url 'rightnow' }" class="head">Right Here</a>
+        <a href="{% url 'Saw' %}" class="head">Saw</a>
+        {% if user.is_authenticated %}
+        <a href="{% url 'me' user %}" class="head">Me</a>
+        <div style="float:right">
+        <a href="{% url 'logout' %}" class="head">Logout</a>
+        </div> 
+        {% else %}
+        <a href="{% url 'login' %}" class="head">Login</a>
+        {% endif %}   
+    </div>
+    <div class="body">
+        {% block body %}
+        {% endblock %}
+    </div>
+</body>
+</html>

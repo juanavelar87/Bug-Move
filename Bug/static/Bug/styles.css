@@ -1,0 +1,90 @@
+.head
+{
+    margin:30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    color: white;
+}
+
+.body
+{
+    background-color: rgb(240 255 237);
+    width:99vw;
+}
+.animaldiv{
+    background-color: aquamarine;
+    min-width: 100px;
+    max-width:600px;
+    display: flex;
+    padding:15px;
+    max-height:300px;
+    justify-content: center;
+    margin:10px;
+}
+button
+{
+    background-color: rgb(220, 239, 255);
+    border-radius: 2px;
+    border-color: azure;
+    margin-bottom: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.like
+{
+    border-radius:100px;
+    border-color: #FFFFFF;
+}
+
+#blue
+{
+    background-color: aliceblue;
+    padding-top: 1px;
+    padding-bottom: 10px;
+}
+.inputlabel
+{
+    display: block;
+    font-size:25px;  
+    color:rgb(80 90 101);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+textarea
+{
+    width: 40vw;
+    margin-bottom: 0px; 
+    border-radius: 5px;
+}
+#userpage
+{
+    margin-left: 50px;
+}
+.links
+{
+    border-color: transparent;
+    background-color: transparent;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.post
+{
+    background-color: aliceblue;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding-left: 20px;
+    margin-right: 270px;
+    
+}
+
+
+#submit
+{
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    width: 100px; 
+    background-color:rgb(37, 157, 255);
+    color:white;
+    border: 1px; 
+    border-radius: 4px;
+}
